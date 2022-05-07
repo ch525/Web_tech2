@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#main-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #FFF9E8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding:30px 0px;
+}
+#main-box .logo-avtr{
+    height: 100px;
+    width: 100px;
+    user-select: none;
+}
+#main-box .logo-avtr img{
+    height: 100%;
+    width: 100%;
+    user-select: none;
+}
+#main-box h1{
+    font-size: 65px;
+    color: #291E4F;
+    font-weight: 800;
+    user-select: none;
+}
+#main-box p{
+    font-size: 18px;
+    color: #291E4F;
+    width: 650px;
+    text-align: center;
+    user-select: none;
+}
+#main-box .filters{
+    position: relative;
+    margin-top: 30px;
+    height: 300px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    margin-bottom: 80px;
+}
+#main-box .filters span:nth-child(1){
+    position: absolute;
+    top: 0px;
+    color: #291E4F;
+    font-size: 18px;
+    font-weight: 600;
+}
+#main-box .filters span:nth-child(3){
+    position: absolute;
+    top: 110px;
+    color: #291E4F;
+    font-size: 18px;
+    font-weight: 600;
+}
+#main-box .filters span:nth-child(5){
+    position: absolute;
+    top: 220px;
+    color: #291E4F;
+    font-size: 18px;
+    font-weight: 600;
+}
+#main-box .filters .gen-age{
+    position: absolute;
+    top: 35px;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#main-box .filters .gen-age li{
+    position: relative;
+    list-style: none;
+    height: 100%;
+    text-align: end;
+    overflow: hidden;
+    padding:0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: #FFC107;
+    color: #291E4F;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.1s ease;
+    font-weight: 600;
+}
+#main-box .filters .gen-age li:hover{
+    background-color: #291E4F;
+    color: #FFC107;
+}
+#main-box .filters .gen-age li i{
+    margin-right:10px;
+    font-size: 20px;
+}
+#main-box .filters .gen-age li:nth-child(3){
+    padding: 0;
+}
+#main-box .filters .gen-age li input{
+    height: 100%;
+    width: 80px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    background-color: #FFC107;
+    color: #291E4F;
+    font-weight: 600;
+}
+#main-box .filters .gen-age li input::placeholder{
+    color: #291E4F;
+    font-weight: 600;
+}
+#main-box .filters .shape{
+    position: absolute;
+    top: 145px;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-box .filters .shape li{
+    list-style: none;
+    height: 100%;
+    width: 60px;
+    background-color: #291E4F;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+#main-box .filters .shape li:hover{
+    transform: scale(0.95);
+}
+#main-box .filters .shape li img{
+    height: 20px;
+    width: 20px;
+}
+#main-box .filters .person{
+    position: absolute;
+    bottom: 0;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-box .filters .person select{
+    height: 100%;
+    width: 80px;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #FFC107;
+    color: #291E4F;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#main-box .filters .person select option{
+    background-color: #fff;
+}
+
+
+#main-box .user-box{
+    position: relative;
+    height: 150px;
+    width: 900px;
+    border: 2px solid #ddd;
+    margin: 15px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+}
+#main-box .user-box .usr-img{
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 145px;
+    border-radius: 8px;
+    transition:0.4s cubic-bezier(1, -0.01, 0, 1.16);
+}
+#main-box .user-box .usr-img img{
+    position: absolute;
+    height: 100%;
+}
+#main-box .user-box .lft-side{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 50px;
+}
+#main-box .user-box .lft-side{
+   background-color: #291E4F;
+}
+
+
+#main-box .user-box .detail{
+    position: absolute;
+    left: 150px;
+    height: 100%;
+    width: 690px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#main-box .user-box .detail li{
+    list-style: none;
+    height: 36px;
+    width: 100%;
+    display: flex;
+}
+#main-box .user-box .detail li div{
+    height: 100%;
+    width: 50%;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+#main-box .user-box .detail li div:nth-child(2){
+    padding-left: 0px;
+    font-weight: 400;
+    font-size: 16px;
+}
+ 
+
+
+
+
